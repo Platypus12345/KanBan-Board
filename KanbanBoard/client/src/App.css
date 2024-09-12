@@ -45,7 +45,8 @@
 
 /* Add this to check the visibility of the sections */
 .pending__wrapper, .ongoing__wrapper, .completed__wrapper {
-  border: 1px solid red;
+  border: 4px solid #323232 ;
+  border-radius: 4%;
 }
 
 .task-container {
