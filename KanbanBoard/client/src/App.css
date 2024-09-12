@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Add this to check the visibility of the sections */
+.pending__wrapper, .ongoing__wrapper, .completed__wrapper {
+  border: 1px solid red;
+}
+
+.task-container {
+  display: flex; /* Aligns the sections in a row */
+  justify-content: space-between; /* Adds space between sections */
+  padding: 20px;
+}
+
+.pending__wrapper, .ongoing__wrapper, .completed__wrapper {
+  width: 30%; /* Adjust width to ensure they fit in a single row */
+  padding: 10px;
+  box-sizing: border-box; /* Keeps width consistent with padding */
+}
+
+.pending__items, .ongoing__items, .completed__items {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .task-container {
+    flex-direction: column; /* Stacks sections vertically on smaller screens */
+  }
+
+  .pending__wrapper, .ongoing__wrapper, .completed__wrapper {
+    width: 100%; /* Make each section take full width */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+}
